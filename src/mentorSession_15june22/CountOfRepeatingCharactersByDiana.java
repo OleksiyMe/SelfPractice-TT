@@ -1,7 +1,7 @@
 package mentorSession_15june22;
 import java.util.ArrayList;
 import java.util.Scanner;
-public class CountOfCharacters {
+public class CountOfRepeatingCharactersByDiana {
     public static void main(String[] args) {
         String str = new Scanner(System.in).next();
 

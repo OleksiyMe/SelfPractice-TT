@@ -1,4 +1,4 @@
-package muhtar_june;
+package hlamAndGagbage.muhtar_8june22;
 
 
 public class AnagramTask {

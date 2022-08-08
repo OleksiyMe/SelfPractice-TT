@@ -1,16 +1,20 @@
 package mentorSession22june22_palindrome;
 
-public class MinAndMaxFromIntAllay {
+public class MinAndMaxFromIntArray {
     public static void main(String[] args) {
-        String str = "1 2 3 4 5";
+        String str = "1 2 -100 4 5 999";
         System.out.println(hiAndLow(str));
     }
+
     public static String hiAndLow(String str) {
         String[] array = str.split(" ");
-        int min = Integer.parseInt(array[0]), max = min;
+        //      int min = Integer.parseInt(array[0]), max = min;
+        int max = Integer.MIN_VALUE;
+        int min = Integer.MAX_VALUE;
         for (int i = 0; i < array.length; i++) {
-            if (Integer.parseInt(array[i]) > max) max = Integer.parseInt(array[i]);
-            if (Integer.parseInt(array[i]) < min) min = Integer.parseInt(array[i]);
+            int each = Integer.parseInt(array[i]);
+            if (each > max) max = each;
+            if (each < min) min = each;
         }
         return max + " " + min;
     }

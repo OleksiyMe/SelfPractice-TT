@@ -1,6 +1,6 @@
 package mentorSession_BigFight;
 
-public class Boxer {
+public class Fighter {
 
     public String name;
     public int health;

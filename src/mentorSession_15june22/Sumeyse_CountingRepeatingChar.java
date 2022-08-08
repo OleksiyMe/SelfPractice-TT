@@ -1,8 +1,8 @@
 package mentorSession_15june22;
 
-public class Sumeyse_method {
+public class Sumeyse_CountingRepeatingChar {
     public static void main(String[] args) {
-        String str ="aabbbbbccww";
+        String str ="aabbcc";
 
         System.out.println(getNumber(str));
 

@@ -1,6 +1,4 @@
-package muhtar_june;
-
-import java.util.Arrays;
+package hlamAndGagbage.muhtar_8june22;
 
 public class UniqueElementsOfArray {
     public static void main(String[] args) {

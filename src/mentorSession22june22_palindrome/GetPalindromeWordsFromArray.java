@@ -4,9 +4,9 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Collections;
 
-public class Palindrome_ArrY {
+public class GetPalindromeWordsFromArray {
     public static void main(String[] args) {
-        String[] array = {"abc", "car", "ada", "racecar", "cool", "abba", "", "1111"};
+        String[] array = {"abc", "car", "ada", "  racecar  ", "  cool  ", "abba  ", "", "1111"};
         System.out.println(arrayListWithPalindromes(array));
     }
 
