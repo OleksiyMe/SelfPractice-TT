@@ -16,6 +16,6 @@ public class JudgeRouteCircle1 {
         for (char ch : input.toCharArray()) {
             map.put(ch, map.get(ch) + 1);
         }
-        return (map.get('U') - map.get('D'))==0 && 0==(map.get('R') - map.get('L'));
+        return map.get('U')==map.get('D')&& map.get('R') ==map.get('L');
     }
 }
