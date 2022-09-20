@@ -1,4 +1,4 @@
-package mentorSession_Foxes;
+package mentorSession.mentorSession_Foxes;
 
 public class WorkWithFoxes {
     public static void main(String[] args) {

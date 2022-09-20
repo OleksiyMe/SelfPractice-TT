@@ -1,4 +1,4 @@
-package mentorSession_3aug2020;
+package mentorSession.mentorSession_3aug2020;
 
 import java.util.LinkedHashMap;
 import java.util.Map;

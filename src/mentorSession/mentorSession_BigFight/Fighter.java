@@ -1,4 +1,4 @@
-package mentorSession_BigFight;
+package mentorSession.mentorSession_BigFight;
 
 public class Fighter {
 

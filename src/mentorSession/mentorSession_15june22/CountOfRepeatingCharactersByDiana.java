@@ -1,4 +1,4 @@
-package mentorSession_15june22;
+package mentorSession.mentorSession_15june22;
 import java.util.ArrayList;
 import java.util.Scanner;
 public class CountOfRepeatingCharactersByDiana {

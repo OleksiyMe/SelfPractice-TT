@@ -1,4 +1,4 @@
-package mentorSession_15june22;
+package mentorSession.mentorSession_15june22;
 
 public class Sumeyse_CountingRepeatingChar {
     public static void main(String[] args) {

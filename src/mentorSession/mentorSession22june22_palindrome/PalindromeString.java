@@ -1,6 +1,5 @@
-package mentorSession22june22_palindrome;
+package mentorSession.mentorSession22june22_palindrome;
 
-import java.util.Locale;
 import java.util.Scanner;
 
 public class PalindromeString {

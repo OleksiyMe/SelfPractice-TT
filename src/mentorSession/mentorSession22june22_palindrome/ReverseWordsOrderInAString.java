@@ -1,4 +1,4 @@
-package mentorSession22june22_palindrome;
+package mentorSession.mentorSession22june22_palindrome;
 
 public class ReverseWordsOrderInAString {
     public static void main(String[] args) {

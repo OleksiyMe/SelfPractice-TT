@@ -1,4 +1,4 @@
-package mentorSession_3aug2020;
+package mentorSession.mentorSession_3aug2020;
 
 public class ChokolateBySymeyse {
 

@@ -1,4 +1,4 @@
-package mentorSession22june22_palindrome;
+package mentorSession.mentorSession22june22_palindrome;
 
 import java.util.ArrayList;
 import java.util.Arrays;

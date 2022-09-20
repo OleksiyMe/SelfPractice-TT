@@ -1,4 +1,4 @@
-package mentorSession_Foxes;
+package mentorSession.mentorSession_Foxes;
 
 public class Fox {
     public String foxID;
