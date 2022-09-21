@@ -1,4 +1,4 @@
-package MentorWeek22;
+package MentorWeek22.removeDuplicates;
 
 public class TaskApp {
     public static void main(String[] args) {
@@ -18,7 +18,8 @@ public class TaskApp {
 
 
         System.out.println(list);
-        System.out.println(list.removeDuplicates());
+   //     System.out.println(list.removeDuplicatesByMe());
+        list.removeDuplicatesTwoPointer();
         System.out.println(list);
 
 

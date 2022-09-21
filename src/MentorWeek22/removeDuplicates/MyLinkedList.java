@@ -1,4 +1,4 @@
-package MentorWeek22;
+package MentorWeek22.removeDuplicates;
 
 public class MyLinkedList {
     public Node head;
@@ -13,15 +13,14 @@ public class MyLinkedList {
         if (isEmpty()) {
             tail = new Node(element);
             head = tail;
-            head.next = tail;
-        } else {
+            } else {
             Node prev = tail;
             tail = new Node(element);
             prev.next = tail;
         }
         return false;
     }
-    public boolean removeDuplicates() {
+    public boolean removeDuplicatesByMe() {
         if (isEmpty() || head.next == null) return false; //nothing to remove from empty or 1 element list
         Node current = head,prev = head;   //initializing the markers
 outer:
@@ -39,6 +38,23 @@ outer:
         }
         return true;                        // we successfully removed duplicates
     }
+
+    public boolean removeDuplicatesTwoPointer() {
+        if (head == null || head.next == null) ;
+        Node slow = head;
+        Node fast = head.next;
+        while (fast != null) {
+            if (slow.value == fast.value) {
+                fast = fast.next;
+                slow.next = fast;
+            } else {
+                slow = slow.next;
+                fast = fast.next;
+            }
+        }
+        return true;
+    }
+
     public String toString() {
         Node current = head;
         String result = "";
