@@ -4,7 +4,9 @@ import com.cydeo.constants.Constants;
 import com.cydeo.service.CarsService;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
 
 @Controller
 //@Component
@@ -17,8 +19,11 @@ public class carsController {
     }
 
 
-    @RequestMapping("/car")
-    public String getmyCars(Model model){
+    @RequestMapping("/car/{header}")
+  //  public String getmyCars(@RequestParam(required = false) String header, Model model){
+    public String getmyCars(@PathVariable String header, Model model){
+
+        model.addAttribute("header",header);
 
         carsService.createMyListOfCars();
 

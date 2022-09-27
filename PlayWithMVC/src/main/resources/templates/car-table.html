@@ -1,10 +1,99 @@
 <!DOCTYPE html>
 <html lang="en" xmlns:th="http://www.thymeleaf.org">
 <head>
-    <meta charset="UTF-8">
-    <title>Title</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description"
+          content="Documentation and examples for opt-in styling of tables (given their prevalent use in JavaScript plugins) with Bootstrap.">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Jekyll v3.7.0">
+
+    <title>Tables · Bootstrap</title>
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/4.0/content/tables/">
+
+    <!-- Bootstrap core CSS -->
+
+    <style class="anchorjs"></style>
+    <link
+            href="https://getbootstrap.com/docs/4.0/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+          integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+            crossorigin="anonymous">
+
+
+
+
 </head>
 <body>
+<h1 th:text="${header}"></h1>
+
+<div clas="col-6 col-md-9 col-xl-8 py-md-3 pl-md-5 bd-content">
+    <table class="table table-striped">
+        <thead>
+        <tr>
+            <th>Car make</th>
+            <th>Car model</th>
+            <th>Year</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td th:text="${car1.make}"></td>
+            <td th:text="${car1.model}"></td>
+            <td th:text="${car1.year}"></td>
+        </tr>
+        <tr>
+            <td th:text="${car2.make}"></td>
+            <td th:text="${car2.model}"></td>
+            <td th:text="${car2.year}"></td>
+        </tr>
+        <tr>
+            <td th:text="${car3.make}"></td>
+            <td th:text="${car3.model}"></td>
+            <td th:text="${car3.year}"></td>
+        </tr>
+        <tr>
+            <td th:text="${car4.make}"></td>
+            <td th:text="${car4.model}"></td>
+            <td th:text="${car4.year}"></td>
+        </tr>
+        <tr>
+            <td th:text="${car5.make}"></td>
+            <td th:text="${car5.model}"></td>
+            <td th:text="${car5.year}"></td>
+        </tr>
+        <tr>
+            <td th:text="${car6.make}"></td>
+            <td th:text="${car6.model}"></td>
+            <td th:text="${car6.year}"></td>
+        </tr>
+        <tr>
+            <td th:text="${car7.make}"></td>
+            <td th:text="${car7.model}"></td>
+            <td th:text="${car7.year}"></td>
+        </tr>
+        <tr>
+            <td th:text="${car8.make}"></td>
+            <td th:text="${car8.model}"></td>
+            <td th:text="${car8.year}"></td>
+        </tr>
+        <tr>
+            <td th:text="${car9.make}"></td>
+            <td th:text="${car9.model}"></td>
+            <td th:text="${car9.year}"></td>
+        </tr>
+        <tr>
+            <td th:text="${car10.make}"></td>
+            <td th:text="${car10.model}"></td>
+            <td th:text="${car10.year}"></td>
+        </tr>
+        </tbody>
+    </table>
+</div>
+
+
+<br><br>
 
 Car make - <span th:text="${car1.make}"></span>. Car model - <span th:text="${car1.model}"></span>.
 Year <span th:text="${car1.year}"></span> <br>
@@ -29,6 +118,20 @@ Year <span th:text="${car9.year}"></span><br>
 
 Car make - <span th:text="${car10.make}"></span>. Car model - <span th:text="${car10.model}"></span>.
 Year <span th:text="${car10.year}"></span><br>
+
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+<script>window.jQuery || document.write('<script src="/docs/4.0/assets/js/vendor/jquery-slim.min.js"><\/script>')</script>
+
+<script src="/docs/4.0/assets/js/vendor/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+<script src="/docs/4.0/dist/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.js"></script>
+<script src="/docs/4.0/assets/js/docs.min.js"></script>
 
 
 </body>
