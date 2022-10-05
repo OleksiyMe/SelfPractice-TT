@@ -36,9 +36,9 @@ public class SolutionByMe {
 
 
         24    1(prefix) 		*  (2*3*4*1)(postfix) 			1 * 24
-        12    (1)(prefix)  	*  (3*4*1) (postfix)			1*  12
-        8     (2*1)(prefix) 	*  (4)					2*  4
-        6     (1*2*3)(prefix)   *   1 (postfix)				6*  1
+        12    (1)(prefix)    	*  (3*4*1) (postfix)			1*  12
+        8     (2*1)(prefix) 	*  (4)				        	2*  4
+        6     (1*2*3)(prefix)   *   1 (postfix)			    	6*  1
 
 
         1  1  2 6     prefix   getting it in a first loop
