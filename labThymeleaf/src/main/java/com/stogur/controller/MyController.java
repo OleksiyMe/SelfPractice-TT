@@ -1,16 +1,15 @@
 package com.stogur.controller;
 
 
+import com.github.javafaker.Faker;
 import com.stogur.bootstrap.DataGenerator;
 import com.stogur.model.Employee;
+import org.springframework.context.annotation.Bean;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-
-import java.util.List;
 
 @Controller
 public class MyController {
@@ -40,5 +39,10 @@ public class MyController {
 
         return "/employee-list";
 
+    }
+
+    @Bean
+    public Faker faker(){
+        return new Faker();
     }
 }
