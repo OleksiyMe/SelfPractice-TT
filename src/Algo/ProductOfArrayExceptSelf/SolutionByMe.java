@@ -35,8 +35,8 @@ public class SolutionByMe {
         expected result 24,  12, 8,  6
 
 
-        24    1(prefix) 		*  (2*3*4*1)(postfix) 			1 * 24
-        12    (1)(prefix)    	*  (3*4*1) (postfix)			1*  12
+        24    1(prefix) 		*  (2*3*4)(postfix) 			1 * 24
+        12    (1)(prefix)    	*  (3*4) (postfix)			    1*  12
         8     (2*1)(prefix) 	*  (4)				        	2*  4
         6     (1*2*3)(prefix)   *   1 (postfix)			    	6*  1
 
@@ -46,4 +46,6 @@ public class SolutionByMe {
 
         multiplying elements of prefix and postfix in a third loop and getting result
 
-        24 12 8 6*/
+        24 12 8 6
+
+        */
