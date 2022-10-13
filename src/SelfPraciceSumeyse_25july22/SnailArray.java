@@ -50,3 +50,14 @@ public class SnailArray {
         System.out.println("result = " + result);
    }
 }
+
+
+/*Create a function that accepts and array. Given an n x n array, return the array elements arranged from outermost elements to the middle element, traveling clockwise.
+
+Examples:
+
+        snail( [[1,2,3], [4,5,6],[7,8,9]]) // [1,2,3,6,9,8,7,4,5]
+        snail([[1,2,3], [8,9,4], [7,6,5]]) // [1,2,3,4,5,6,7,8,9]
+        snail([[1,2,3,1], [4,5,6,4], [7,8,9,7], [7,8,9,7]]) // [1,2,3,1,4,7,7,9,8,7,7,4,5,6,8,9]
+
+        */

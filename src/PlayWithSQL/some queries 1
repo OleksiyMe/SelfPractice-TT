@@ -1,0 +1,70 @@
+
+select * from employees where employee_id between 130 and 180;
+
+select * from employees where salary between 5000 and 7000;
+
+select * from employees where employee_id=176 or employee_id=135 or employee_id=154 or employee_id=129;
+
+select * from employees where employee_id in (176,135,154,129);
+
+select city  from locations where country_id in ('IT', 'US', 'UK');
+
+select count(*) from employees where  job_id='IT_PROG';
+
+select count(*) from employees where salary>8000;
+
+select count (distinct first_name)  from employees;
+
+select * from employees order by salary desc ;
+
+select * from employees order by first_name;
+select * from employees order by salary desc;
+select count(first_name) from employees;
+
+select * from employees where first_name like '_u%';
+SELECT *
+FROM employees
+WHERE starts_with(first_name, 'C');
+select first_name from employees where first_name like '%c%' or first_name like '%C%';
+select MAX(salary) from employees;
+select SUm(salary) from employees;
+select avg(salary) from employees;
+select round ( avg(salary), 2) from employees;
+select * from employees
+where salary = (select max(salary) from employees);
+
+select MAX(salary) from employees;
+select *
+from employees where salary=24000;
+
+select *
+from employees where salary=(select MAX(salary) from employees);
+
+select * from employees order by salary desc limit 2;
+
+select * from (select * from employees order by salary desc limit 2) as TMP order by salary asc limit 1;
+
+select * from employees
+where salary = (select max(salary) from employees
+                where salary< (select max(salary) from employees));
+
+select max(salary) from employees
+
+where salary<(select max(salary) from employees);
+
+select * from employees where salary< (select MAx(salary) from employees)order by salary desc limit 1;
+
+select max(salary) from employees;
+
+select max(salary) from employees where salary< (select max(salary) from employees);
+
+select * from employees where salary=(select max(salary) from employees where salary< (select max(salary) from employees));
+
+select * from employees order by salary desc
+                        offset 6
+                           limit 1 ;
+select distinct salary from employees order by salary desc ;
+
+select distinct salary from employees order by salary desc offset 13 limit 1;
+
+select * from employees where salary=(select distinct salary from employees order by salary desc offset 13 limit 1);

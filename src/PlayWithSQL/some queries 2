@@ -1,0 +1,19 @@
+select avg(salary) from employees where job_id='IT_PROG';
+
+select *from employees;
+select avg(salary) from employees where job_id='SA_REP';
+select distinct job_id  from employees;
+
+select count(*) from employees where job_id='IT_PROG';
+
+select count(*) from employees where job_id='FI_MGR';
+
+select count(*) from employees where job_id='ST_CLERK';
+
+Select job_id, avg(salary), count(*) , sum(salary) from employees GROUP BY job_id;
+
+select job_id , avg(salary) from employees group by job_id;
+
+select avg(salary), job_id from employees group by job_id;
+
+select first_name, count(*) from employees group by first_name having count(*)>1;
