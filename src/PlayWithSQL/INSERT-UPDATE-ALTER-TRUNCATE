@@ -1,0 +1,22 @@
+select *from scrumteam;
+insert into scrumteam values (4,'Michael','Scoefild','PO');
+
+update scrumteam set jobtitle='Devops'
+where Emp_ID=4;
+
+delete from scrumteam where firstname='Phoebi';
+commit;
+
+select * from scrumteam;
+--Add new column
+ALTER TABLE scrumteam ADD salary Integer;
+update scrumteam set salary=120000 where emp_id=1;
+update scrumteam set salary=90000 where emp_id=4;
+
+alter table scrumteam rename salary to annual_salary;
+
+alter table scrumteam drop annual_salary;
+alter table scrumteam rename to agileteam;
+alter table agileteam rename to scrumteam;
+truncate table scrumteam;
+drop table scrumteam;
