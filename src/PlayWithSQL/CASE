@@ -1,0 +1,8 @@
+select first_name, salary,
+       case
+           when salary>7000 then 'paid well'
+           when salary<7000 then 'underpaid'
+           else 'unpaid'
+       End
+           as category
+    from employees;
