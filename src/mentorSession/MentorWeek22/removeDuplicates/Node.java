@@ -1,4 +1,4 @@
-package MentorWeek22.removeDuplicates;
+package mentorSession.MentorWeek22.removeDuplicates;
 
 public class Node {
     public Integer value;

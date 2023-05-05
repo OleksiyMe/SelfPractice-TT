@@ -1,4 +1,4 @@
-package MentorWeek22.palindrome;
+package mentorSession.MentorWeek22.palindrome;
 
 public class Node <T>{
     T value;

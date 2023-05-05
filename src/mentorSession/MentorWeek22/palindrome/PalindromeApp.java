@@ -1,4 +1,4 @@
-package MentorWeek22.palindrome;
+package mentorSession.MentorWeek22.palindrome;
 
 public class PalindromeApp {
     public static void main(String[] args) {

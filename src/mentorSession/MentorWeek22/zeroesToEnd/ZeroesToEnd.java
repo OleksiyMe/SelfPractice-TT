@@ -1,4 +1,4 @@
-package MentorWeek22.zeroesToEnd;
+package mentorSession.MentorWeek22.zeroesToEnd;
 
 import java.util.Arrays;
 

@@ -49,6 +49,6 @@ public class TheFirstNonRepeatingVovel {
                 else if (count == 1) return i; //Vowel appeared once and for the first time
             }
         }
-        return -1;                          //None of vowels appeared or appeared just once*/
+        return -1;                          //Node of vowels appeared or appeared just once*/
 // }
 
